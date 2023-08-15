@@ -1,8 +1,8 @@
 # videos
 
-DATA SONIFICATION with PYTHON— Data visualization techniques – for example, bar charts, line charts, scatter plots, etc. are a key skill in data analysis for the purpose of data storytelling. A second level of visual communication might be to animate data, a somewhat more specialized skill. At the next level, one can also add sound to an animated graph and explore data sonification. This is more of a niche skill, actually used at the NASA. See also this article in Science. https://lnkd.in/erPtdeny
+DATA SONIFICATION with PYTHON— Data visualization techniques
 
-So here is my sonification of the fluctuations in the bitcoin exchange rate (with the US dollar) over a 500 days period. A somewhat oriental melody driven exclusively from the exchange rate fluctuations.
+Here is my sonification of the fluctuations in the bitcoin exchange rate (with the US dollar) over a 2-year period. A somewhat oriental melody driven exclusively from the exchange rate fluctuations.
 
 Technical note: This data sonification project was done entirely in Python. The financial data was obtained with Python library yfinance. The soundless animation was produced with Python’s Matplotlib and Celluloid libraries. The background image was taken from the internet and read with the matplotlib imread() function. The soundless animation was saved as a mp4 file (video) using FFMpegFileWriter. The sound file was prepared using the Python library music21 by converting the exchange rate fluctuations to music using basic music rules (pitch, amplitude, tempo...), and midi note notations. The orchestration (different instruments for daily high, low and close values of the Bitcoin) was also done using music21. The resulting midi file was converted as an mp3 (audio) file using FluidSynth and IPython. Finally the merging of the mp3 (audio file) and the mp4 (soundlless video of animation of Bitcoin exchange rate) was done using Python’s library ffmpeg-python.
 
